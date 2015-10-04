@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="306"/>
+            <point key="canvasLocation" x="1362" y="98"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Yzv-Ay-8k0">
@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Aq-bg-TWo">
-                                <rect key="frame" x="107" y="114" width="200" height="30"/>
+                                <rect key="frame" x="107" y="189" width="200" height="30"/>
                                 <animations/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -105,7 +105,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uj4-Z5-dZM">
-                                <rect key="frame" x="107" y="160" width="200" height="30"/>
+                                <rect key="frame" x="107" y="235" width="200" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -114,7 +114,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oVy-BT-MQb">
-                                <rect key="frame" x="107" y="204" width="200" height="30"/>
+                                <rect key="frame" x="107" y="279" width="200" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -123,7 +123,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter code here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UyR-sr-Yll">
-                                <rect key="frame" x="107" y="278" width="200" height="30"/>
+                                <rect key="frame" x="107" y="353" width="200" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="d4r-70-N3g"/>
@@ -135,7 +135,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3K-he-IoR">
-                                <rect key="frame" x="107" y="243" width="80" height="26"/>
+                                <rect key="frame" x="107" y="318" width="80" height="26"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="8k9-QB-hWC"/>
@@ -145,7 +145,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbw-Aj-5aS">
-                                <rect key="frame" x="107" y="322" width="80" height="30"/>
+                                <rect key="frame" x="107" y="397" width="80" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
@@ -153,7 +153,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PP-WW-0Q0">
-                                <rect key="frame" x="227" y="322" width="80" height="30"/>
+                                <rect key="frame" x="227" y="397" width="80" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Register"/>
                                 <connections>
@@ -161,7 +161,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X4-Iu-UQH">
-                                <rect key="frame" x="227" y="243" width="80" height="26"/>
+                                <rect key="frame" x="227" y="318" width="80" height="26"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="BXl-hB-QTQ"/>
@@ -194,7 +194,7 @@
                             <constraint firstItem="6X4-Iu-UQH" firstAttribute="trailing" secondItem="UyR-sr-Yll" secondAttribute="trailing" id="cDO-A3-jZR"/>
                             <constraint firstItem="xbw-Aj-5aS" firstAttribute="leading" secondItem="UyR-sr-Yll" secondAttribute="leading" id="doI-0Q-bsO"/>
                             <constraint firstItem="U3K-he-IoR" firstAttribute="leading" secondItem="UyR-sr-Yll" secondAttribute="leading" id="gYl-6w-M7h"/>
-                            <constraint firstItem="UyR-sr-Yll" firstAttribute="centerY" secondItem="r3a-mI-51Z" secondAttribute="centerY" constant="-75" id="kaC-XQ-WLG"/>
+                            <constraint firstItem="UyR-sr-Yll" firstAttribute="centerY" secondItem="r3a-mI-51Z" secondAttribute="centerY" id="kaC-XQ-WLG"/>
                             <constraint firstItem="oVy-BT-MQb" firstAttribute="leading" secondItem="UyR-sr-Yll" secondAttribute="leading" id="lZX-iD-eAo"/>
                             <constraint firstItem="UyR-sr-Yll" firstAttribute="top" secondItem="uj4-Z5-dZM" secondAttribute="bottom" constant="88" id="mJU-bC-F6E"/>
                             <constraint firstItem="xbw-Aj-5aS" firstAttribute="trailing" secondItem="UyR-sr-Yll" secondAttribute="trailing" constant="-120" id="qGA-Pn-OgD"/>
@@ -210,6 +210,7 @@
                         <outlet property="pwdTextField" destination="uj4-Z5-dZM" id="jmH-TI-oLc"/>
                         <outlet property="registerButton" destination="2PP-WW-0Q0" id="WSO-wJ-Uci"/>
                         <outlet property="vCode" destination="U3K-he-IoR" id="xkf-om-9Z6"/>
+                        <outlet property="vOffsetConstraint" destination="kaC-XQ-WLG" id="qOT-o7-KBj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3d-G2-PBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -284,6 +285,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="loJ-Ga-luD">
                             <connections>
                                 <action selector="logoutDidPress:" destination="wHl-aE-fMe" id="hLc-ji-bJg"/>
+                                <segue destination="BYZ-38-t0r" kind="modal" id="2nl-x3-fbK"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ofk-gp-kTe">

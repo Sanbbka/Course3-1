@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *codeTextField;
 
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *vOffsetConstraint;
 
 @property (weak, nonatomic) IBOutlet UILabel *vCode;
 
@@ -32,6 +33,16 @@
     // Do any additional setup after loading the view.
 
     [self gRandCode];
+    
+    @weakify(self);
+    [self.keyboardSignal subscribeNext:^(NSNumber *x) {
+        [UIView animateWithDuration:.3 animations:^{
+            @strongify(self);
+            self.vOffsetConstraint.constant = [x floatValue] / -4;
+            [self.view layoutIfNeeded];
+        }];
+    }];
+
     
     [[self rac_signalForSelector:@selector(textFieldShouldReturn:)] subscribeNext:^(RACTuple *tuple) {
 
