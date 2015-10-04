@@ -10,13 +10,31 @@
 #import <ReactiveCocoa.h>
 #import <KVOMutableArray+ReactiveCocoaSupport.h>
 #import <BlocksKit+UIKit.h>
+#import "Item.h"
+#import "ItemViewController.h"
 
-@interface AppViewController ()
+
+@interface AppViewController () {
+    NSNumber *number;
+    int count;
+}
+
 @property (nonatomic, readonly) KVOMutableArray *items;
 @end
 
 @implementation AppViewController
 @synthesize items = _items;
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    count = 0;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:NO];
+    [self.tableView reloadData];
+}
+
 
 - (KVOMutableArray *)items {
     if (!_items) {
@@ -53,7 +71,10 @@
 }
 
 - (IBAction)addButtonDidPress:(id)sender {
-    [self.items addObject:@(self.items.count)];
+   
+    Item *item = [[Item alloc] initWithNumber:count];
+    count++;
+    [self.items addObject:item];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -62,7 +83,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", self.items[indexPath.row]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithInt:[self.items[indexPath.row] number]]];
+    cell.detailTextLabel.text = [self.items[indexPath.row] text1];//[NSString stringWithFormat:@"%@", itemsData[indexPath.row]];
     return cell;
 }
 
@@ -70,25 +92,43 @@
     return UITableViewCellEditingStyleDelete;
 }
 
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.items removeObjectAtIndex:indexPath.row];
 }
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSNumber *number = self.items[indexPath.row];
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Change value" message:[NSString stringWithFormat:@"Enter new value for %@", number] preferredStyle:UIAlertControllerStyleAlert];
-    __weak UIAlertController *wAlert = alert;
-    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.keyboardType = UIKeyboardTypeNumberPad;
-    }];
-    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        UITextField *input = wAlert.textFields.firstObject;
-        NSNumber *value = @([input.text integerValue]);
-        [self.items replaceObjectAtIndex:indexPath.row withObject:value];
-    }]];
-    [alert addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
-    [self presentViewController:alert animated:YES completion:nil];
+    
+    [self performSegueWithIdentifier:@"edit" sender:indexPath];
+   
+
+}
+
+
+-(NSString *)genItem:(NSUInteger *)count {
+    
+    NSString *itemStr;
+    
+    for (NSInteger i = 1; i <= count; i++) {
+        
+        [itemStr stringByAppendingString: [NSString stringWithFormat:@"%li", (long)i]];
+    }
+    return itemStr;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"edit"]) {
+        NSLog(@"ok");
+        ItemViewController *itemVC = segue.destinationViewController;
+        
+        NSInteger numb = [(NSIndexPath *)sender row];
+        itemVC.index = numb;
+        itemVC.items = _items;
+    }
 }
 
 - (void)dealloc {

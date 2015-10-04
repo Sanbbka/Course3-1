@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E3C1A9E1BC02ACB00111D52 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C1A9D1BC02ACB00111D52 /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6E4202271BC06A7800CBB4EB /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4202261BC06A7800CBB4EB /* Item.m */; settings = {ASSET_TAGS = (); }; };
+		6E42022A1BC1060100CBB4EB /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4202291BC1060100CBB4EB /* ItemViewController.m */; settings = {ASSET_TAGS = (); }; };
 		817A811F44575E568F811FEC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E220F698D5D9139BD48EC5 /* libPods.a */; };
 		AACFAF331BAF4F3C00BA7C90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AACFAF321BAF4F3C00BA7C90 /* main.m */; };
 		AACFAF361BAF4F3C00BA7C90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AACFAF351BAF4F3C00BA7C90 /* AppDelegate.m */; };
@@ -24,6 +27,12 @@
 		1280017CB7DB603830FB2A4E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1BCC4EB37DAB47EE44534B06 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		40E220F698D5D9139BD48EC5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3C1A9C1BC02ACB00111D52 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		6E3C1A9D1BC02ACB00111D52 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		6E4202251BC06A7800CBB4EB /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		6E4202261BC06A7800CBB4EB /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		6E4202281BC1060100CBB4EB /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		6E4202291BC1060100CBB4EB /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 		AACFAF2E1BAF4F3C00BA7C90 /* Lesson1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACFAF321BAF4F3C00BA7C90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AACFAF341BAF4F3C00BA7C90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,14 +97,20 @@
 				AACFAF4E1BAF5BA500BA7C90 /* NetManager.h */,
 				AACFAF4F1BAF5BA500BA7C90 /* NetManager.m */,
 				AACFAF3A1BAF4F3C00BA7C90 /* Main.storyboard */,
+				6E4202281BC1060100CBB4EB /* ItemViewController.h */,
+				6E4202291BC1060100CBB4EB /* ItemViewController.m */,
 				AACFAF481BAF51A200BA7C90 /* KeyboardViewController.h */,
 				AACFAF491BAF51A200BA7C90 /* KeyboardViewController.m */,
 				AACFAF4B1BAF5B0100BA7C90 /* UIViewController+Extensions.h */,
 				AACFAF4C1BAF5B0100BA7C90 /* UIViewController+Extensions.m */,
 				AACFAF371BAF4F3C00BA7C90 /* LoginViewController.h */,
 				AACFAF381BAF4F3C00BA7C90 /* LoginViewController.m */,
+				6E3C1A9C1BC02ACB00111D52 /* RegisterViewController.h */,
+				6E3C1A9D1BC02ACB00111D52 /* RegisterViewController.m */,
 				AACFAF511BAF5F9D00BA7C90 /* AppViewController.h */,
 				AACFAF521BAF5F9D00BA7C90 /* AppViewController.m */,
+				6E4202251BC06A7800CBB4EB /* Item.h */,
+				6E4202261BC06A7800CBB4EB /* Item.m */,
 				AACFAF311BAF4F3C00BA7C90 /* Supporting Files */,
 			);
 			path = Lesson1;
@@ -228,13 +243,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4202271BC06A7800CBB4EB /* Item.m in Sources */,
 				AACFAF4D1BAF5B0100BA7C90 /* UIViewController+Extensions.m in Sources */,
 				AACFAF501BAF5BA500BA7C90 /* NetManager.m in Sources */,
 				AACFAF391BAF4F3C00BA7C90 /* LoginViewController.m in Sources */,
 				AACFAF361BAF4F3C00BA7C90 /* AppDelegate.m in Sources */,
 				AACFAF531BAF5F9D00BA7C90 /* AppViewController.m in Sources */,
 				AACFAF331BAF4F3C00BA7C90 /* main.m in Sources */,
+				6E42022A1BC1060100CBB4EB /* ItemViewController.m in Sources */,
 				AACFAF4A1BAF51A200BA7C90 /* KeyboardViewController.m in Sources */,
+				6E3C1A9E1BC02ACB00111D52 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3027AC6E52FA3E1E49B8048B48A29FB2A7453EB3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1F90890DC8470CFD802C13A44839463BC0F6FF1F" : 0,
+    "3027AC6E52FA3E1E49B8048B48A29FB2A7453EB3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D5470C4E-BD2B-4247-AB08-A414FD7D1514",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1F90890DC8470CFD802C13A44839463BC0F6FF1F" : "",
+    "3027AC6E52FA3E1E49B8048B48A29FB2A7453EB3" : "Course3-1"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Lesson1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Lesson1.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DenisovDenisov\/Market.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1F90890DC8470CFD802C13A44839463BC0F6FF1F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Sanbbka\/Course3-1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3027AC6E52FA3E1E49B8048B48A29FB2A7453EB3"
+    }
+  ]
+}

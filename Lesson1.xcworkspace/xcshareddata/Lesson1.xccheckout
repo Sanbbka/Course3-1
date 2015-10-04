@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D5470C4E-BD2B-4247-AB08-A414FD7D1514</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lesson1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1F90890DC8470CFD802C13A44839463BC0F6FF1F</key>
+		<string>https://github.com/DenisovDenisov/Market.git</string>
+		<key>3027AC6E52FA3E1E49B8048B48A29FB2A7453EB3</key>
+		<string>https://github.com/Sanbbka/Course3-1.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lesson1.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1F90890DC8470CFD802C13A44839463BC0F6FF1F</key>
+		<string>../..</string>
+		<key>3027AC6E52FA3E1E49B8048B48A29FB2A7453EB3</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Sanbbka/Course3-1.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3027AC6E52FA3E1E49B8048B48A29FB2A7453EB3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1F90890DC8470CFD802C13A44839463BC0F6FF1F</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3027AC6E52FA3E1E49B8048B48A29FB2A7453EB3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Course3-1</string>
+		</dict>
+	</array>
+</dict>
+</plist>
