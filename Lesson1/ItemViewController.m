@@ -11,11 +11,16 @@
 #import "Item.h"
 
 @interface ItemViewController ()
+{
+    Item *ite;
+    int slideValue;
+}
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @property (weak, nonatomic) IBOutlet UILabel *lenghtTextLabel;
 @property (weak, nonatomic) IBOutlet UITextField *strTextfield;
 @property (weak, nonatomic) IBOutlet UIButton *saveButt;
 @property (weak, nonatomic) IBOutlet UIButton *svButton;
+
 
 @end
 
@@ -25,14 +30,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    RAC(self.svButton, enabled) = [RACSignal combineLatest:@[ self.strTextfield.rac_textSignal, RACObserve(self.slider, value) ] reduce:^(NSString *log){
-        return @(log.length == (int)[[self slider] value]);
-    }];
+    ite =  [self.items objectAtIndex:_index];
+    
+    
     
     @weakify(self);
     [[self.slider rac_signalForControlEvents:UIControlEventValueChanged] subscribeNext:^(UISlider *slide) {
         @strongify(self);
-        [self.lenghtTextLabel setText:[NSString stringWithFormat:@"%i", (int)[slide value]]];
+        slideValue = (int)[slide value];
+        ite.number = slideValue;
+        [self.lenghtTextLabel setText:[NSString stringWithFormat:@"%i", slideValue]];
+    }];
+    
+    RAC(self.svButton, enabled) = [RACSignal combineLatest:@[ self.strTextfield.rac_textSignal, RACObserve(ite, number) ] reduce:^(NSString *log, NSNumber *value){
+        
+        return @(log.length == value.integerValue);
     }];
     [self.slider setValue:[[self.items objectAtIndex:_index] number]];
     [[self lenghtTextLabel]setText:[NSString stringWithFormat:@"%i", (int)[_slider value]]];
@@ -41,7 +53,6 @@
         @strongify(self);
         
         
-        Item *ite =  [self.items objectAtIndex:_index];
         
         ite.text1 = self.strTextfield.text;
         ite.number = (int)[self.slider value];
