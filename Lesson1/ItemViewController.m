@@ -25,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    RAC(self.svButton, enabled) = [RACSignal combineLatest:@[ self.strTextfield.rac_textSignal ] reduce:^(NSString *log){
+    RAC(self.svButton, enabled) = [RACSignal combineLatest:@[ self.strTextfield.rac_textSignal, RACObserve(self.slider, value) ] reduce:^(NSString *log){
         return @(log.length == (int)[[self slider] value]);
     }];
     
